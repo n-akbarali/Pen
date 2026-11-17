@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAKER — Hashamatli Ruchka va Qalamlar Atelyesi</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23E9DFC8' stroke='%230D153A' stroke-width='3'/%3E%3Cpath d='M32 13L45 38L39 49H25L19 38L32 13Z' fill='none' stroke='%230D153A' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='31' r='3.5' fill='%230D153A'/%3E%3Cline x1='32' y1='13' x2='32' y2='28' stroke='%230D153A' stroke-width='3'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#bosh-sahifa" class="brand">
+        <span class="brand-logo-circle">
+          <i class="fa-solid fa-pen-nib logo-main-icon"></i>
+          <i class="fa-solid fa-crown logo-sub-icon"></i>
+        </span>
+        <span class="brand-name-wrap">
+          <span class="brand-text">FAKER</span>
+          <span class="brand-sub">ATELIER GENÈVE</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#bosh-sahifa" class="nav-link active" data-section="bosh-sahifa">Bosh sahifa</a>
+        <a href="#yonalishlar" class="nav-link" data-section="yonalishlar">Turlar</a>
+        <a href="#katalog" class="nav-link" data-section="katalog">Katalog</a>
+        <a href="#xizmatlar" class="nav-link" data-section="xizmatlar">Afzalliklar</a>
+        <a href="#kolleksiyalar" class="nav-link" data-section="kolleksiyalar">Kolleksiyalar</a>
+        <a href="#fikrlar" class="nav-link" data-section="fikrlar">Fikrlar</a>
+        <a href="#aloqa" class="nav-link" data-section="aloqa">Aloqa</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" id="themeToggleBtn" aria-label="Mavzuni o'zgartirish">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button type="button" class="cart-trigger" id="openCartBtn" aria-label="Savatcha">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button type="button" class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="bosh-sahifa" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-kicker"><i class="fa-solid fa-sparkles"></i> Midnight Navy • Qo'l mehnati</span>
+          <h1>Har bir chiziqda <span class="accent-text">san'at va xarakter</span> mujassam</h1>
+          <p>Tungi ko'k lak, Grade 5 titan va uglerod tolasidan yaratilgan FAKER kolleksion qalamlari. Bepul lazer gravirovka va baxmal sovg'a qutisi bilan taqdim etiladi.</p>
+
+          <div class="hero-buttons">
+            <button type="button" class="btn-primary filter-btn active" data-category="all" data-scroll="true">
+              <i class="fa-solid fa-compass"></i> Katalogni ko'rish
+            </button>
+            <button type="button" class="btn-secondary filter-btn" data-category="aksiya" data-scroll="true">
+              <i class="fa-solid fa-percent"></i> Maxsus takliflar
+            </button>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <strong>18K</strong>
+              <span>Oltin-platina pero</span>
+            </div>
+            <div class="metric-card">
+              <strong>300 ta</strong>
+              <span>Cheklangan seriya</span>
+            </div>
+            <div class="metric-card">
+              <strong>Umrbod</strong>
+              <span>Rasmiy kafolat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-aura"></div>
+          <div class="atelier-stage">
+            <div class="stage-header">
+              <span class="stage-tag">EDITION 2026</span>
+              <span class="stage-num">#014 / 300</span>
+            </div>
+
+            <div class="pen-silhouette">
+              <div class="pen-cap"></div>
+              <div class="pen-ring"></div>
+              <div class="pen-barrel">
+                <span>FAKER</span>
+              </div>
+              <div class="pen-nib">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+            </div>
+
+            <div class="stage-footer">
+              <div>
+                <h2>Faker Midnight Sovereign</h2>
+                <p>Tungi ko'k lak • 18K pero 0.7 mm</p>
+              </div>
+              <span class="stage-price">450 000 so'm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="yonalishlar" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">01 / TURKUMLAR</span>
+            <h2>Yozuv san'ati yo'nalishlari</h2>
+          </div>
+          <p>O'zingizga mos mexanizm va uslubni tanlang</p>
+        </div>
+
+        <div class="category-grid">
+          <button type="button" class="cat-card filter-btn" data-category="pero" data-scroll="true">
+            <span class="cat-num">01</span>
+            <div class="cat-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>Pero Qalamlar</h3>
+            <p>18K oltin va iridiy uchli klassik siyohli qalamlar</p>
+            <span class="cat-count">2 ta model <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button type="button" class="cat-card filter-btn" data-category="roller" data-scroll="true">
+            <span class="cat-num">02</span>
+            <div class="cat-icon"><i class="fa-solid fa-pen-fancy"></i></div>
+            <h3>Rollerball</h3>
+            <p>Qog'ozda yengil va uzluksiz sirpanuvchi tizim</p>
+            <span class="cat-count">2 ta model <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button type="button" class="cat-card filter-btn" data-category="sharikli" data-scroll="true">
+            <span class="cat-num">03</span>
+            <div class="cat-icon"><i class="fa-solid fa-pen"></i></div>
+            <h3>Sharikli Qalamlar</h3>
+            <p>Titan va po'lat korpusli kundalik biznes modellar</p>
+            <span class="cat-count">2 ta model <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button type="button" class="cat-card filter-btn" data-category="toplam" data-scroll="true">
+            <span class="cat-num">04</span>
+            <div class="cat-icon"><i class="fa-solid fa-gift"></i></div>
+            <h3>Sovg'a To'plamlari</h3>
+            <p>Charm g'ilof va shisha siyohdonli hashamatli quti</p>
+            <span class="cat-count">2 ta to'plam <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button type="button" class="cat-card filter-btn" data-category="limited" data-scroll="true">
+            <span class="cat-num">05</span>
+            <div class="cat-icon"><i class="fa-solid fa-crown"></i></div>
+            <h3>Cheklangan Seriya</h3>
+            <p>Raqamlangan kolleksion san'at durdonalari</p>
+            <span class="cat-count">2 ta model <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+
+          <button type="button" class="cat-card filter-btn" data-category="aksessuar" data-scroll="true">
+            <span class="cat-num">06</span>
+            <div class="cat-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h3>Siyoh va Aksessuarlar</h3>
+            <p>Billur siyohdonlar va qo'lda tikilgan g'iloflar</p>
+            <span class="cat-count">2 ta mahsulot <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="katalog" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">02 / KATALOG</span>
+            <h2>Bestsellerlar va Yangi Modellar</h2>
+          </div>
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Model nomi yoki material izlang..." />
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <button type="button" class="filter-pill filter-btn active" data-category="all">Barchasi (12)</button>
+          <button type="button" class="filter-pill filter-btn" data-category="pero">Pero Qalamlar</button>
+          <button type="button" class="filter-pill filter-btn" data-category="roller">Rollerball</button>
+          <button type="button" class="filter-pill filter-btn" data-category="sharikli">Sharikli</button>
+          <button type="button" class="filter-pill filter-btn" data-category="toplam">Sovg'a To'plamlari</button>
+          <button type="button" class="filter-pill filter-btn" data-category="limited">Cheklangan Seriya</button>
+          <button type="button" class="filter-pill filter-btn" data-category="aksessuar">Aksessuarlar</button>
+          <button type="button" class="filter-pill filter-btn" data-category="aksiya">Chegirmalar</button>
+        </div>
+
+        <div class="filter-banner" id="filterBanner" hidden>
+          <span id="filterBannerText">Tanlangan turkum</span>
+          <button type="button" class="reset-btn" id="resetFilterBtn">
+            <i class="fa-solid fa-xmark"></i> Barchasini ko'rsatish
+          </button>
+        </div>
+
+        <div class="pens-grid" id="pensGrid">
+
+          <article class="pen-card pero aksiya" data-price="450000" data-material="Tungi ko'k smola va 18K pero" data-nib="Medium (0.7 mm)" data-desc="Qo'lda sayqallangan 18 karatli pero va chuqur tungi ko'k smola korpusli flagman pero qalam.">
+            <div class="pen-visual">
+              <span class="badge-sale">-17%</span>
+              <div class="pen-showcase-box tone-midnight">
+                <span class="cover-tag">Pero Qalam</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-pen-nib"></i></div>
+                <strong class="cover-title">Faker Midnight Sovereign</strong>
+                <small class="cover-sub">18K Nib • Deep Navy</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Pero Qalam</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+              </div>
+              <h3 class="pen-title">Faker Midnight Sovereign</h3>
+              <p class="pen-subtitle">Tungi ko'k smola • 18K pero</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">450 000 so'm</span>
+                  <span class="price-old">540 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card pero" data-price="380000" data-material="Mat anodlangan alyuminiy" data-nib="Fine (0.5 mm)" data-desc="Minimalistik mat korpus va iridiy qoplamali nozik peroga ega zamonaviy biznes qalam.">
+            <div class="pen-visual">
+              <div class="pen-showcase-box tone-royal">
+                <span class="cover-tag">Pero Qalam</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-feather-pointed"></i></div>
+                <strong class="cover-title">Faker Imperial Matte</strong>
+                <small class="cover-sub">Iridium Fine • Royal Navy</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Pero Qalam</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="pen-title">Faker Imperial Matte</h3>
+              <p class="pen-subtitle">Qirollik ko'ki • Fine 0.5 mm</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">380 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card roller aksiya" data-price="290000" data-material="Haqiqiy uglerod tolasi (Carbon)" data-nib="Ceramic Roller 0.5 mm" data-desc="Yengil va o'ta mustahkam karbon tolali korpus hamda tez quriydigan keramik sterjenli rollerball.">
+            <div class="pen-visual">
+              <span class="badge-sale">-18%</span>
+              <div class="pen-showcase-box tone-steel">
+                <span class="cover-tag">Rollerball</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-pen-fancy"></i></div>
+                <strong class="cover-title">Faker Carbon Aero</strong>
+                <small class="cover-sub">3K Carbon • Ceramic Tip</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Rollerball</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="pen-title">Faker Carbon Aero</h3>
+              <p class="pen-subtitle">Uglerod tolasi • Keramik uch</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">290 000 so'm</span>
+                  <span class="price-old">350 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card roller" data-price="260000" data-material="To'q ko'k lak va xrom bezak" data-nib="Rollerball 0.6 mm" data-desc="Ko'p qatlamli ko'k lak qoplamasi va mukammal muvozanatlangan og'irlik markaziga ega rollerball.">
+            <div class="pen-visual">
+              <div class="pen-showcase-box tone-royal">
+                <span class="cover-tag">Rollerball</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-signature"></i></div>
+                <strong class="cover-title">Faker Velvet Indigo</strong>
+                <small class="cover-sub">Indigo Lacquer • Chrome</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Rollerball</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="pen-title">Faker Velvet Indigo</h3>
+              <p class="pen-subtitle">Indigo lak • Xrom bezaklar</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">260 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card sharikli aksiya" data-price="210000" data-material="Grade 5 Titan" data-nib="Ballpoint 0.7 mm" data-desc="Aviatsiya titanidan frezerlangan, sokin burama mexanizmli kundalik biznes sharikli ruchka.">
+            <div class="pen-visual">
+              <span class="badge-sale">-18%</span>
+              <div class="pen-showcase-box tone-steel">
+                <span class="cover-tag">Sharikli</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-pen"></i></div>
+                <strong class="cover-title">Faker Executive Titanium</strong>
+                <small class="cover-sub">Grade 5 Titanium • Twist</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Sharikli</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="pen-title">Faker Executive Titanium</h3>
+              <p class="pen-subtitle">Sof titan • Burama mexanizm</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">210 000 so'm</span>
+                  <span class="price-old">255 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card sharikli" data-price="175000" data-material="Zanglamaydigan po'lat" data-nib="Ballpoint 0.7 mm" data-desc="Ingichka va ixcham korpusli, cho'ntak va kundalik daftarlar uchun qulay po'lat ruchka.">
+            <div class="pen-visual">
+              <div class="pen-showcase-box tone-midnight">
+                <span class="cover-tag">Sharikli</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-pen-clip"></i></div>
+                <strong class="cover-title">Faker Classic Slim Steel</strong>
+                <small class="cover-sub">Brushed Steel • Slim</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Sharikli</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+              </div>
+              <h3 class="pen-title">Faker Classic Slim Steel</h3>
+              <p class="pen-subtitle">Po'lat korpus • Ixcham dizayn</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">175 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card toplam aksiya" data-price="640000" data-material="Latun, kumush qoplama va charm" data-nib="Pero + Rollerball" data-desc="Bitta pero va bitta rollerball qalam, shisha siyohdon hamda tabiiy charm g'ilofdan iborat sovg'a qutisi.">
+            <div class="pen-visual">
+              <span class="badge-sale">-18%</span>
+              <div class="pen-showcase-box tone-midnight">
+                <span class="cover-tag">Sovg'a To'plami</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-gift"></i></div>
+                <strong class="cover-title">Faker Royal Duo Box</strong>
+                <small class="cover-sub">2 Qalam • Siyoh • G'ilof</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Sovg'a To'plami</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+              </div>
+              <h3 class="pen-title">Faker Royal Duo Box</h3>
+              <p class="pen-subtitle">Pero + Rollerball + Charm g'ilof</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">640 000 so'm</span>
+                  <span class="price-old">780 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card toplam" data-price="790000" data-material="Yong'oq yog'ochi va latun" data-nib="Pero 0.7 mm" data-desc="Rahbarlar ish stoli uchun yong'oq yog'ochidan yasalgan taglik, pero qalam va xat ochgich to'plami.">
+            <div class="pen-visual">
+              <div class="pen-showcase-box tone-royal">
+                <span class="cover-tag">Sovg'a To'plami</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-box-open"></i></div>
+                <strong class="cover-title">Faker Heritage Desk Set</strong>
+                <small class="cover-sub">Walnut Wood • Executive</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Sovg'a To'plami</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="pen-title">Faker Heritage Desk Set</h3>
+              <p class="pen-subtitle">Yong'oq yog'ochi • Stol to'plami</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">790 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card limited aksiya" data-price="1250000" data-material="925 kumush va 18K pero" data-nib="18K Broad" data-desc="Dunyo bo'ylab atigi 300 dona ishlab chiqarilgan, korpusiga shaxsiy tartib raqami o'yilgan kolleksion model.">
+            <div class="pen-visual">
+              <span class="badge-sale">-17%</span>
+              <div class="pen-showcase-box tone-steel">
+                <span class="cover-tag">Cheklangan Seriya</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-crown"></i></div>
+                <strong class="cover-title">Faker Tourbillon Crown</strong>
+                <small class="cover-sub">Limited 300 pcs • Silver 925</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Cheklangan Seriya</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+              </div>
+              <h3 class="pen-title">Faker Tourbillon Crown</h3>
+              <p class="pen-subtitle">925 kumush • 300 dona seriya</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">1 250 000 so'm</span>
+                  <span class="price-old">1 500 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card limited" data-price="1400000" data-material="Tabiiy Lapis Lazuli toshi va kumush" data-nib="18K Medium" data-desc="Samarqand moviy gumbazlaridan ilhomlanib, tabiiy lojuvard toshidan qo'lda yo'nilgan noyob durdona.">
+            <div class="pen-visual">
+              <div class="pen-showcase-box tone-royal">
+                <span class="cover-tag">Cheklangan Seriya</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-gem"></i></div>
+                <strong class="cover-title">Faker Samarkand Lapis</strong>
+                <small class="cover-sub">Lapis Lazuli • 18K Nib</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Cheklangan Seriya</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+              </div>
+              <h3 class="pen-title">Faker Samarkand Lapis</h3>
+              <p class="pen-subtitle">Tabiiy lojuvard toshi • 18K pero</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">1 400 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card aksessuar aksiya" data-price="85000" data-material="Qalin billur shisha idish (50 ml)" data-nib="Barcha pero qalamlar uchun" data-desc="Pero uchiga zarar yetkazmaydigan, qog'ozga yoyilmaydigan to'q tungi ko'k rangli premium shisha siyoh.">
+            <div class="pen-visual">
+              <span class="badge-sale">-19%</span>
+              <div class="pen-showcase-box tone-steel">
+                <span class="cover-tag">Aksessuar</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-droplet"></i></div>
+                <strong class="cover-title">Faker Royal Navy Ink</strong>
+                <small class="cover-sub">50 ml • Crystal Bottle</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Aksessuar</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="pen-title">Faker Royal Navy Ink</h3>
+              <p class="pen-subtitle">50 ml • Billur shisha siyohdon</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">85 000 so'm</span>
+                  <span class="price-old">105 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="pen-card aksessuar" data-price="145000" data-material="100% Nappa buzoq terisi" data-nib="2 ta qalam sig'imli" data-desc="Ichki qismi yumshoq zamsh bilan qoplangan, 2 ta sevimli qalamingizni tirnalishdan saqlovchi charm g'ilof.">
+            <div class="pen-visual">
+              <div class="pen-showcase-box tone-midnight">
+                <span class="cover-tag">Aksessuar</span>
+                <div class="pen-icon-circle"><i class="fa-solid fa-briefcase"></i></div>
+                <strong class="cover-title">Faker Nappa Leather Case</strong>
+                <small class="cover-sub">Genuine Leather • 2 Slots</small>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="pen-info">
+              <div class="pen-meta">
+                <span class="pen-genre">Aksessuar</span>
+                <span class="pen-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="pen-title">Faker Nappa Leather Case</h3>
+              <p class="pen-subtitle">Tabiiy charm • 2 qalamli g'ilof</p>
+              <div class="pen-footer">
+                <div class="pen-price">
+                  <span class="price-now">145 000 so'm</span>
+                </div>
+                <div class="pen-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="xizmatlar" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">03 / ATELYE XIZMATLARI</span>
+            <h2>Hunarmandchilik Standarti</h2>
+          </div>
+          <p>Har bir FAKER qalami 42 bosqichli sifat nazoratidan o'tkaziladi</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-top">
+              <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <span class="service-step">01</span>
+            </div>
+            <h3>Bepul Gravirovka</h3>
+            <p>Qalam qopqog'iga ismingiz yoki maxsus sana lazer yordamida nafis tarzda o'yib yozib beriladi.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-top">
+              <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <span class="service-step">02</span>
+            </div>
+            <h3>Umrbod Kafolat</h3>
+            <p>Barcha mexanizm va pero qismlari uchun rasmiy sertifikat va umrbod texnik xizmat taqdim etiladi.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-top">
+              <div class="service-icon"><i class="fa-solid fa-box-open"></i></div>
+              <span class="service-step">03</span>
+            </div>
+            <h3>Hashamatli Quti</h3>
+            <p>Har bir buyurtma baxmal ichlikli sovg'a qutisi, tozalash matosi va qo'shimcha sterjen bilan keladi.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-top">
+              <div class="service-icon"><i class="fa-solid fa-truck-fast"></i></div>
+              <span class="service-step">04</span>
+            </div>
+            <h3>Tezkor Yetkazish</h3>
+            <p>Toshkent bo'ylab 3 soatda, barcha viloyatlarga esa 24 soat ichida sug'urtalangan holda yetkazamiz.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kolleksiyalar" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">04 / SERIYALAR</span>
+            <h2>Imzo Kolleksiyalar</h2>
+          </div>
+          <p>Kolleksiya ustiga bosing va mos qalamlarni katalogda ko'ring</p>
+        </div>
+
+        <div class="collections-grid">
+          <button type="button" class="collection-card" data-category="pero" data-collection-name="Midnight Sovereign">
+            <div class="collection-avatar">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <div class="collection-meta">
+              <h3>Midnight Sovereign</h3>
+              <span>Pero qalamlar • 2 model</span>
+            </div>
+          </button>
+
+          <button type="button" class="collection-card" data-category="roller" data-collection-name="Carbon Aero">
+            <div class="collection-avatar">
+              <i class="fa-solid fa-pen-fancy"></i>
+            </div>
+            <div class="collection-meta">
+              <h3>Carbon Aero</h3>
+              <span>Rollerball • 2 model</span>
+            </div>
+          </button>
+
+          <button type="button" class="collection-card" data-category="sharikli" data-collection-name="Executive Titanium">
+            <div class="collection-avatar">
+              <i class="fa-solid fa-pen"></i>
+            </div>
+            <div class="collection-meta">
+              <h3>Executive Titanium</h3>
+              <span>Sharikli • 2 model</span>
+            </div>
+          </button>
+
+          <button type="button" class="collection-card" data-category="toplam" data-collection-name="Royal Gift Box">
+            <div class="collection-avatar">
+              <i class="fa-solid fa-gift"></i>
+            </div>
+            <div class="collection-meta">
+              <h3>Royal Gift Box</h3>
+              <span>Sovg'a to'plamlari • 2 model</span>
+            </div>
+          </button>
+
+          <button type="button" class="collection-card" data-category="limited" data-collection-name="Samarkand Limited">
+            <div class="collection-avatar">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <div class="collection-meta">
+              <h3>Samarkand Limited</h3>
+              <span>Cheklangan seriya • 2 model</span>
+            </div>
+          </button>
+
+          <button type="button" class="collection-card" data-category="aksessuar" data-collection-name="Atelier Care">
+            <div class="collection-avatar">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <div class="collection-meta">
+              <h3>Atelier Care</h3>
+              <span>Siyoh va g'iloflar • 2 model</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="fikrlar" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">05 / SHARHLAR</span>
+            <h2>Mijozlar fikri (12 ta sharh)</h2>
+          </div>
+          <div class="review-dots">
+            <button type="button" class="review-dot active" aria-label="1-guruh"></button>
+            <button type="button" class="review-dot" aria-label="2-guruh"></button>
+            <button type="button" class="review-dot" aria-label="3-guruh"></button>
+            <button type="button" class="review-dot" aria-label="4-guruh"></button>
+          </div>
+        </div>
+
+        <div class="reviews-wrapper">
+          <div class="review-slide active">
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Rustam Alimov</h4>
+                  <span>Toshkent • Faker Midnight Sovereign</span>
+                </div>
+              </div>
+              <p>"Muhim shartnomalarga imzo chekish uchun oldim. Qog'oz ustida juda mayin yuradi, qutisi esa haqiqiy san'at asari!"</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Dilshod Karimov</h4>
+                  <span>Samarqand • Faker Royal Duo Box</span>
+                </div>
+              </div>
+              <p>"Rahbarimizning yubileyiga ismlarini gravirovka qildirib sovg'a qildik. Hammaga juda manzur bo'ldi!"</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Aziza Tursunova</h4>
+                  <span>Namangan • Faker Carbon Aero</span>
+                </div>
+              </div>
+              <p>"Karbon korpusi shu qadar yengilki, soatlab yozganda ham qo'l charchamaydi. Tez yetkazib berishdi."</p>
+            </article>
+          </div>
+
+          <div class="review-slide">
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Sherzod Rahimov</h4>
+                  <span>Buxoro • Faker Executive Titanium</span>
+                </div>
+              </div>
+              <p>"Titan korpusi juda baquvvat va vazni ham o'ziga yarasha salobatli. Kundalik ish uchun eng zo'r tanlov."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Malika Yusupova</h4>
+                  <span>Andijon • Faker Samarkand Lapis</span>
+                </div>
+              </div>
+              <p>"Tabiiy lojuvard toshidan ishlangan dizayni hayratlanarli. Kolleksiyamdagi eng qadrli qalamga aylandi."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Kamoliddin Sobirov</h4>
+                  <span>Farg'ona • Faker Imperial Matte</span>
+                </div>
+              </div>
+              <p>"To'q ko'k rangi qo'lda sirpanmaydi va siyohi bir tekis oqadi. Xizmat ko'rsatish darajasi a'lo."</p>
+            </article>
+          </div>
+
+          <div class="review-slide">
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Ulug'bek Qodirov</h4>
+                  <span>Qarshi • Faker Heritage Desk Set</span>
+                </div>
+              </div>
+              <p>"Ish kabinetimdagi stolga juda yarashdi. Yong'oq yog'ochidan yasalgan tagligi sifatli ishlangan."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Nodira Xasanova</h4>
+                  <span>Urganch • Faker Velvet Indigo</span>
+                </div>
+              </div>
+              <p>"Indigo rangi yorug'likda juda chiroyli tovlanadi. Qadoqlanishi ham nihoyatda did bilan qilingan."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Jamshid Ergashev</h4>
+                  <span>Jizzax • Faker Royal Navy Ink</span>
+                </div>
+              </div>
+              <p>"Siyohning rangi to'yingan va tez quriydi, chapaqaylar uchun ham qog'ozni bulg'amasligi juda qulay."</p>
+            </article>
+          </div>
+
+          <div class="review-slide">
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Farrux Mirzayev</h4>
+                  <span>Navoiy • Faker Tourbillon Crown</span>
+                </div>
+              </div>
+              <p>"925 kumush detallari va maxsus tartib raqami borligi uni yanada noyob qiladi. Tavsiya etaman!"</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Zarina Mahmudova</h4>
+                  <span>Termiz • Faker Nappa Leather Case</span>
+                </div>
+              </div>
+              <p>"Charm g'ilofning hidi va choklari juda sifatli, ikkita ruchkam bemalol sig'adi va tirnalmaydi."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Boburjon Saidov</h4>
+                  <span>Nukus • Faker Classic Slim Steel</span>
+                </div>
+              </div>
+              <p>"Kostyum cho'ntagida olib yurish uchun juda qulay va yengil. Narxiga nisbatan sifati ancha baland."</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="aloqa" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#bosh-sahifa" class="brand">
+            <span class="brand-logo-circle">
+              <i class="fa-solid fa-pen-nib logo-main-icon"></i>
+              <i class="fa-solid fa-crown logo-sub-icon"></i>
+            </span>
+            <span class="brand-name-wrap">
+              <span class="brand-text">FAKER</span>
+              <span class="brand-sub">ATELIER GENÈVE</span>
+            </span>
+          </a>
+          <p class="footer-about">Nafis yozuv madaniyati va zamonaviy muhandislik uyg'unligida yaratilgan hashamatli ruchka va qalamlar brendi.</p>
+          <div class="social-links">
+            <a href="#aloqa" class="social-circle" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#aloqa" class="social-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#aloqa" class="social-circle" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#aloqa" class="social-circle" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bo'limlar</h4>
+          <ul class="footer-list">
+            <li><a href="#bosh-sahifa">Bosh sahifa</a></li>
+            <li><a href="#yonalishlar">Qalam turlari</a></li>
+            <li><a href="#katalog">To'liq katalog</a></li>
+            <li><a href="#xizmatlar">Hunarmandchilik</a></li>
+            <li><a href="#kolleksiyalar">Kolleksiyalar</a></li>
+            <li><a href="#fikrlar">Mijozlar fikri</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Katalog</h4>
+          <ul class="footer-list">
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="pero" data-scroll="true">Pero Qalamlar</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="roller" data-scroll="true">Rollerball</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="sharikli" data-scroll="true">Sharikli Qalamlar</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="toplam" data-scroll="true">Sovg'a To'plamlari</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="limited" data-scroll="true">Cheklangan Seriya</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="aksessuar" data-scroll="true">Siyoh va G'iloflar</button></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Butik va Obuna</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Toshkent sh., Taras Shevchenko ko'chasi, 22</li>
+            <li><i class="fa-solid fa-phone"></i> +998 (71) 205-88-88</li>
+            <li><i class="fa-solid fa-clock"></i> Har kuni: 10:00 – 22:00</li>
+          </ul>
+          <div class="newsletter-form">
+            <input type="email" id="newsletterInput" placeholder="Email manzilingiz..." />
+            <button type="button" class="btn-primary newsletter-btn" id="newsletterBtn" aria-label="Obuna bo'lish">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 FAKER Atelier Genève. Barcha huquqlar himoyalangan.</span>
+        <div class="payment-badges">
+          <span>UZCARD</span>
+          <span>HUMO</span>
+          <span>PAYME</span>
+          <span>CLICK</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="quickModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeModalBtn" aria-label="Yopish">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span class="section-tag">MODEL XUSUSIYATLARI</span>
+      <h3 id="modalTitle">Qalam nomi</h3>
+      <p class="modal-subtitle" id="modalSubtitle">Qisqa tavsif</p>
+      <div class="modal-specs">
+        <div><span>Korpus materiali:</span> <strong id="modalMaterial">—</strong></div>
+        <div><span>Uch o'lchami:</span> <strong id="modalNib">—</strong></div>
+      </div>
+      <p class="modal-desc" id="modalDesc">Batafsil ma'lumot</p>
+      <div class="modal-footer">
+        <strong class="price-now" id="modalPrice">0 so'm</strong>
+      </div>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Savatcha</h3>
+      <button type="button" class="icon-btn" id="closeCartBtn" aria-label="Yopish">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="cart-body" id="cartItemsList">Savatchangiz hozircha bo'sh</div>
+    <div class="cart-foot">
+      <div class="cart-total">
+        <span>Jami summa:</span>
+        <strong id="cartTotalAmount">0 so'm</strong>
+      </div>
+      <button type="button" class="btn-primary btn-checkout" id="checkoutBtn">
+        <i class="fa-solid fa-check"></i> Buyurtma berish
+      </button>
+    </div>
+  </aside>
+
+  <div class="toast-box" id="toastBox">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastText">Buyurtmangiz qabul qilindi!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
